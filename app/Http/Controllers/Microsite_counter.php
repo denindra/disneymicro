@@ -39,7 +39,6 @@ class Microsite_counter extends Controller
 
             return response()->json([
                 'status'         => true,
-                'totalTweet'     => $getCounter['response'], 
                 'imageOutput'    => $imageSelector,
                 'message'        => 'get data success',
                 'show_date'      => Carbon::createFromFormat('Y-m-d H:i:s', now())->format('d-m-Y H:i:s'),
