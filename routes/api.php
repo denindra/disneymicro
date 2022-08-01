@@ -1,8 +1,7 @@
 <?php
 
-use App\Http\Controllers\Microsite_counter;
+
 use App\Http\Controllers\TestService;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,17 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
-
-Route::group(['middleware'=>['ensureToken']], function () {
-
-    Route::get('show', [Microsite_counter::class, 'show']);
-    Route::post('insert', [Microsite_counter::class, 'insert']);
-    
-
-});
 
 Route::get('test-config', [TestService::class, 'index']);

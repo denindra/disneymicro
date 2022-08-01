@@ -4,11 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Microsite_counter;
 use App\Models\TestingModel;
-use Illuminate\Http\Request;
-use App\Services\ShowCounter;
-use App\Services\InsertCounter;
-use App\Services\CounterImageSelection;
-use Illuminate\Support\Facades\DB;
 
 class TestService extends Controller
 {
@@ -74,14 +69,6 @@ class TestService extends Controller
           
               $updateCounterMessage = '<span style="color:#f00">NOT OK</span> (CHECK DATABASE CONNECTION) - '.$e->getMessage();
           }
-
-        //   return response()->json([
-        //     'status'                => true,
-        //     'runGetDatatesting'     => $getCounterMessage,
-        //     'rungetDataReal'        => $getCounterMessageReal,
-        //     'insertOrUpdate'        => $updateCounterMessage 
-           
-        // ], 200);
 
         $data  = array(
             'status' => '<span style="color:#5BB318">true</span>',
