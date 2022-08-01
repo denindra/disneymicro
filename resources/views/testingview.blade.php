@@ -5,5 +5,7 @@
         Get Data Testing : {!!$runGetDatatesting!!}<br/>
         Get Data Real : {!!$rungetDataReal!!}<br/>
        Insert or Update : {!!$insertOrUpdate!!}<br/>
+       base url : {!!$URL_ENV!!}<br/>
+       
     </body>
 </html>

@@ -74,7 +74,8 @@ class TestService extends Controller
             'status' => '<span style="color:#5BB318">true</span>',
             'runGetDatatesting' =>$getCounterMessage,
             'rungetDataReal' => $getCounterMessageReal,
-            'insertOrUpdate' =>$updateCounterMessage 
+            'insertOrUpdate' =>$updateCounterMessage,
+            'URL_ENV' =>env('APP_URL')
         );
 
         return view('testingview',$data);
