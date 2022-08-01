@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Microsite_counter;
 use App\Models\TestingModel;
+use Illuminate\Support\Facades\Request;
 
 class TestService extends Controller
 {
@@ -16,7 +17,7 @@ class TestService extends Controller
             $getCounter =  TestingModel::find(1);
            
             if($getCounter) {
-                $getCounterMessage = '<span style="color:#5BB318">OK</span>';
+                $getCounterMessage = '<span style="color:#5BB318">OK - total data '.$getCounter->tweet_counter.'</span>';
             }
             else {
                 $getCounterMessage =  '<span style="color:#f00">NOT OK</span> - run testing seeder';
@@ -80,5 +81,15 @@ class TestService extends Controller
 
         return view('testingview',$data);
 
+    }
+    public function update(Request $request) {
+
+        $updateCounter =  TestingModel::find(1);
+
+        if($updateCounter) {
+         //   $updateCounter->tweet_counter = $request-> ;
+            $updateCounter->save();
+            $updateCounterMessage  = '<span style="color:#5BB318">OK</span>';
+        }
     }
 }
