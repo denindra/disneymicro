@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Microsite_counter;
+use App\Http\Controllers\TestService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +28,5 @@ Route::group(['middleware'=>['ensureToken']], function () {
     
 
 });
+
+Route::get('test-config', [TestService::class, 'index']);
