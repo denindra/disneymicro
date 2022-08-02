@@ -56,7 +56,8 @@ class TestService extends Controller
             $updateCounter =  TestingModel::find(1);
 
             if($updateCounter) {
-                $updateCounter->tweet_counter = 1;
+                
+                $updateCounter->tweet_counter =  $updateCounter->increment('tweet_counter',1);
                 $updateCounter->save();
                 $updateCounterMessage  = '<span style="color:#5BB318">OK</span>';
             }
@@ -87,10 +88,24 @@ class TestService extends Controller
         $updateCounter =  TestingModel::find(1);
 
         if($updateCounter) {
-            $updateCounter->tweet_counter =   $updateCounter->increment('tweet_counter',1); ;
+            $updateCounter->tweet_counter =   $updateCounter->increment('tweet_counter',1);
             $updateCounter->save();
+
+            return response()->json([
+                'status'         => true,
+                'message'        =>'data has been save'
+            ], 200);
         }
-       
+        else {
+
+            return response()->json([
+                'status'         => true,
+                'message'        =>'somethingerror'
+            ], 400);
+
+        }
+        
+        
         
     }
 }
