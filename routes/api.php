@@ -17,6 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('test-config', [TestService::class, 'index']);
-
-
 Route::get('update', [TestService::class, 'update']);
+Route::get('get', [TestService::class, 'get']);
