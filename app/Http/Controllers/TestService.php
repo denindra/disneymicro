@@ -87,9 +87,10 @@ class TestService extends Controller
         $updateCounter =  TestingModel::find(1);
 
         if($updateCounter) {
-         //   $updateCounter->tweet_counter = $request-> ;
+            $updateCounter->tweet_counter =   $updateCounter->increment('tweet_counter',1); ;
             $updateCounter->save();
-            $updateCounterMessage  = '<span style="color:#5BB318">OK</span>';
         }
+       
+        
     }
 }
