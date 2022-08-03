@@ -10,97 +10,92 @@ class CounterImageSelection
 {
     public function imageSelection($totalCount) {
         
-        if($totalCount >= 0 && $totalCount <= 3) {
+        if($totalCount >= 0 && $totalCount <= 11) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks01.png';
             $isComplete = false;
         }
-       else  if($totalCount >= 4 && $totalCount <= 6) {
+       else  if($totalCount >= 12 && $totalCount <= 23) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks02.png';
             $isComplete = false;
         }
-       else  if($totalCount >= 7 && $totalCount <= 9) {
+       else  if($totalCount >= 24 && $totalCount <= 35) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks03.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 10 && $totalCount <= 12) {
+        else  if($totalCount >= 36 && $totalCount <= 47) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks04.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 13 && $totalCount <= 15) {
+        else  if($totalCount >= 48 && $totalCount <= 59) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks05.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 16 && $totalCount <= 18) {
+        else  if($totalCount >= 60 && $totalCount <= 71) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks06.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 19 && $totalCount <= 21) {
+        else  if($totalCount >= 72 && $totalCount <= 83) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks07.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 22 && $totalCount <= 24) {
+        else  if($totalCount >= 84 && $totalCount <= 95) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks08.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 25 && $totalCount <= 27) {
+        else  if($totalCount >= 96 && $totalCount <= 107) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks09.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 28 && $totalCount <= 30) {
+        else  if($totalCount >= 108 && $totalCount <= 119) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks10.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 31 && $totalCount <= 33) {
+        else  if($totalCount >= 120 && $totalCount <= 131) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks11.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 34 && $totalCount <= 36) {
+        else  if($totalCount >= 132 && $totalCount <= 143) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks12.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 37 && $totalCount <= 39) {
+        else  if($totalCount >= 144 && $totalCount <= 155) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks13.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 40 && $totalCount <= 42) {
+        else  if($totalCount >= 156 && $totalCount <= 166) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks14.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 43 && $totalCount <= 45) {
+        else  if($totalCount >= 167 && $totalCount <= 177) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks15.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 46 && $totalCount <= 48) {
+        else  if($totalCount >= 178 && $totalCount <= 188) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks16.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 49 && $totalCount <= 51) {
+        else  if($totalCount >= 189 && $totalCount <= 199) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks17.png';
             $isComplete = false;
         }
-        else  if($totalCount >= 52 && $totalCount <= 54) {
-
-            $coverImage = env('APP_URL').'/images/artwork/artworks18.png';
-            $isComplete = false;
-        }
-        else if($totalCount >= 55 ) {
+        else if($totalCount >= 200 ) {
 
             $coverImage = env('APP_URL').'/images/artwork/artworks18.png';
             $isComplete = true;
