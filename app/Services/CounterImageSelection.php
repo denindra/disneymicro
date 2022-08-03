@@ -12,47 +12,47 @@ class CounterImageSelection
         
         if($totalCount >= 0 && $totalCount <= 11) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks01.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork01.png';
             $isComplete = false;
         }
        else  if($totalCount >= 12 && $totalCount <= 23) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks02.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork02.png';
             $isComplete = false;
         }
        else  if($totalCount >= 24 && $totalCount <= 35) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks03.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork03.png';
             $isComplete = false;
         }
         else  if($totalCount >= 36 && $totalCount <= 47) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks04.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork04.png';
             $isComplete = false;
         }
         else  if($totalCount >= 48 && $totalCount <= 59) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks05.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork05.png';
             $isComplete = false;
         }
         else  if($totalCount >= 60 && $totalCount <= 71) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks06.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork06.png';
             $isComplete = false;
         }
         else  if($totalCount >= 72 && $totalCount <= 83) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks07.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork07.png';
             $isComplete = false;
         }
         else  if($totalCount >= 84 && $totalCount <= 95) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks08.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork08.png';
             $isComplete = false;
         }
         else  if($totalCount >= 96 && $totalCount <= 107) {
 
-            $coverImage = env('APP_URL').'/images/artwork/artworks09.png';
+            $coverImage = env('APP_URL').'/images/artwork/artwork09.png';
             $isComplete = false;
         }
         else  if($totalCount >= 108 && $totalCount <= 119) {
