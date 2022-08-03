@@ -10,7 +10,6 @@ use Carbon\Carbon;
 use Illuminate\Support\Str;
 class Microsite_counter extends Controller
 {
-    
     private $showCounter;
     private $insertCounter;
     private $imageSelection;
